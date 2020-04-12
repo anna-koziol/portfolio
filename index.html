@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anna Kozioł</title>
+    <meta name="description" content="Anna Kozioł - junior frontend developer" />
+    <meta name="keywords" content="Anna Kozioł, junior frontend developer, Kraków, programista, strony internetowe, HTML, CSS, javascript, React, portfolio, webmaster" />
+    <link rel="icon" href="./img/logo.png" />
+    <!-- Facebook -->
+    <meta property="og:title" content="Anna Kozioł" />
+    <meta property="og:image" content="./img/logo.png" />
+    <meta property="og:description" content="Anna Kozioł - junior frontend developer" />
+    <meta property="og:type" content="Portfolio website" />
+    <!-- Bootstrap/MDB -->
+    <link href="./mdb/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./mdb/css/mdb.min.css" rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Główna
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-offset="90">O mnie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features" data-offset="90">Projekty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#opinions" data-offset="30">Umiejętności</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services" data-offset="90">Kontakt</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/anna-kozio%C5%82-222430146/" target="_blank">
+                                <i class="fab fa-linkedin light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/anna-koziol" target="_blank">
+                                <i class="fab fa-github-square light-green-text-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <div id="intro-section" class="view">
+            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                <div class="container px-md-3 px-sm-0">
+                    <div class="row wow fadeIn">
+                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+
+                            <h1 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Anna Kozioł</h1>
+                            <h4 class="subtext-header mt-2 mb-4">Junior Frontend Developer</h4>
+                            <a href="#!" class="btn btn-rounded btn-outline-white">
+                                ZOBACZ MOJE PORTFOLIO
+                            </a>
+
+                        </div>
+                        <div class="img-background">
+                            <img src="./img/1.png" alt="image abstract">
+                            <img src="./img/2.png" alt="image abstract">
+                            <img src="./img/3.png" alt="image abstract">
+                            <img src="./img/5.png" alt="image abstract">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <section class="container" id="about">
+            <div class="section-dash center-element"></div>
+            <h3 class="font-weight-bold black-text mb-4 pb-2">O mnie</h3>
+            <div class="row position-relative">
+
+                <h5 class="text-behind">O mnie</h5>
+                <div class="col-12 col-md-6 text-left">
+                    <p>
+                        Jestem niestacjonarną studentką Akademii Górniczo-Hutniczej w Krakowie. Uczę się ciekawego kierunku Informatyka i ekonometria. Od kilku lat jestem zafascynowana frontendem, z którym wiążę swoją przyszłość zawodową. Na co dzień staram się wciąż rozwijać
+                        umiejętności informatyczne poprzez drobne projekty. W 2018 roku zaczęłam działania jako freelancer. Od sierpnia 2018 roku działam również w startupie - Aribo - jako asystentka zarządu oraz tester manualny oprogramowania.
+                    </p>
+
+                    <a href="../ANNA KOZIOŁ CV.pdf" download>
+                        Pobierz moje CV <i class="fas fa-file-download"></i>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="./img/me.png" alt="my photo - selfportrait">
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid background-half" id="projects">
+            <div class="section-dash center-element"></div>
+            <h3 class="font-weight-bold black-text mb-4 pb-2 ">Projekty</h3>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">
+                        Zapraszam do zobaczenia moich dotychczasowych stron i aplikacji.
+                    </p>
+
+                    <div class="container">
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body p-0">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+
+                                        <!-- Grid row -->
+                                        <div class="row">
+
+                                            <!-- Grid column -->
+                                            <div class="col-md-6 py-5 pl-5">
+
+                                                <h5 class="font-weight-normal mb-3">Paper cup mockup</h5>
+
+                                                <p class="text-muted">Key letters, explain which writing we he carpeting or fame, the itch expand medical amped through constructing time. And scarfs, gain, get showed accounts decades.</p>
+
+                                                <ul class="list-unstyled font-small mt-5">
+                                                    <li>
+                                                        <p class="text-uppercase mb-2"><strong>Client</strong></p>
+                                                        <p class="text-muted mb-4">Envato Inc.</p>
+                                                    </li>
+
+                                                    <li>
+                                                        <p class="text-uppercase mb-2"><strong>Date</strong></p>
+                                                        <p class="text-muted mb-4">June 27, 2019</p>
+                                                    </li>
+
+                                                    <li>
+                                                        <p class="text-uppercase mb-2"><strong>Skills</strong></p>
+                                                        <p class="text-muted mb-4">Design, HTML, CSS, Javascript</p>
+                                                    </li>
+
+                                                    <li>
+                                                        <p class="text-uppercase mb-2"><strong>Address</strong></p>
+                                                        <a href="https://mdbootstrap.com/docs/jquery/design-blocks/">MDBootstrap</a>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <!-- Grid column -->
+
+                                            <!-- Grid column -->
+                                            <div class="col-md-6">
+
+                                                <div class="view rounded-right">
+                                                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/5.jpg" alt="Sample image">
+                                                </div>
+
+                                            </div>
+                                            <!-- Grid column -->
+
+                                        </div>
+                                        <!-- Grid row -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--First row-->
+                        <div class="row">
+
+                            <!--First column-->
+                            <div class="col-12">
+
+                                <!-- Nav tabs -->
+                                <ul class="nav md-pills flex-center flex-wrap mx-0" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active font-weight-bold text-uppercase" data-toggle="tab" href="#all" role="tab">WSZYSTKO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#web" role="tab">WEB</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#mobile" role="tab">MOBILE</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!--First column-->
+
+                        </div>
+                        <!--First row-->
+
+                        <!--Tab panels-->
+                        <div class="tab-content mb-5">
+
+                            <!--Panel 1-->
+                            <div class="tab-pane fade show in active" id="all" role="tabpanel">
+
+                                <!-- Grid row -->
+                                <div class="row">
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-12 col-lg-4">
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/wolf.png" alt="WOLF page image">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">WOLF</h5>
+                                                <p class="card-text text-uppercase mb-3">Strona wizytówka</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/nad-wilga.PNG" alt="Nad Wilgą page image">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Pizzeria Nad Wilgą</h5>
+                                                <p class="card-text text-uppercase mb-3">Strona wizytówka</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/camera.png" alt="Bike app image">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Camera App</h5>
+                                                <p class="card-text text-uppercase mb-3">Aplikacja mobilna</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/GeoMap.png" alt="Bike app image">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">GeoMap App</h5>
+                                                <p class="card-text text-uppercase mb-3">Aplikacja mobilna</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!-- Grid column -->
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 col-lg-4">
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/bulpix.PNG" alt="Bulpix page image">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Bulpix</h5>
+                                                <p class="card-text text-uppercase mb-3">Strona wizytówka + CMS</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/390.PNG" alt="390 page image">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">390</h5>
+                                                <p class="card-text text-uppercase mb-3">Strona wizytówka</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/bike.png" alt="Bike app image">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Bike Stations</h5>
+                                                <p class="card-text text-uppercase mb-3">Aplikacja mobilna</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/stopper.png" alt="Bike app image">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Stopper</h5>
+                                                <p class="card-text text-uppercase mb-3">Aplikacja mobilna</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!-- Grid column -->
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 col-lg-4">
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/rosalline.PNG" alt="Card image cap">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Rosalline</h5>
+                                                <p class="card-text text-uppercase mb-3">Strona wizytówka</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/fiszki.PNG" alt="Card image cap">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Fiszki</h5>
+                                                <p class="card-text text-uppercase mb-3">Aplikacja webowa</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="./img/portfolio/calc.png" alt="Bike app image">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Calc</h5>
+                                                <p class="card-text text-uppercase mb-3">Aplikacja mobilna</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+
+                                    </div>
+                                    <!-- Grid column -->
+
+                                </div>
+                                <!-- Grid row -->
+
+                            </div>
+                            <!--Panel 1-->
+
+                            <!--Panel 2-->
+                            <div class="tab-pane fade" id="web" role="tabpanel">
+
+                                <!-- Grid row -->
+                                <div class="row">
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-12 col-lg-4">
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img9.jpg" alt="Card image cap">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Paper Bag</h5>
+                                                <p class="card-text text-uppercase mb-3">Bag</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!-- Grid column -->
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 col-lg-4">
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src=" https://mdbootstrap.com/img/Photos/Others/img4.jpg" alt="Card image cap">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Book</h5>
+                                                <p class="card-text text-uppercase mb-3">Book</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!-- Grid column -->
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 col-lg-4">
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img8.jpg" alt="Card image cap">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Magazine</h5>
+                                                <p class="card-text text-uppercase mb-3">Book</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!-- Grid column -->
+
+                                </div>
+                                <!-- Grid row -->
+
+                            </div>
+                            <!--Panel 2-->
+
+                            <!--Panel 3-->
+                            <div class="tab-pane fade" id="mobile" role="tabpanel">
+
+                                <!-- Grid row -->
+                                <div class="row">
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-12 col-lg-4">
+
+                                        <!-- Card -->
+                                        <div class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img3.jpg" alt="Card image cap">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Phone Bag</h5>
+                                                <p class="card-text text-uppercase mb-3">Bag, Box</p>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!-- Grid column -->
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 col-lg-4">
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img5.jpg" alt="Card image cap">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">Notes</h5>
+                                                <p class="card-text text-uppercase mb-3">Note</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!-- Grid column -->
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 col-lg-4">
+
+                                        <!-- Card -->
+                                        <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+
+                                            <!-- Card image -->
+                                            <img class="card-img-top" src=" https://mdbootstrap.com/img/Photos/Others/img10.jpg" alt="Card image cap">
+
+                                            <!-- Card content -->
+                                            <div class="card-body">
+
+                                                <h5 class="my-3">T-shirt</h5>
+                                                <p class="card-text text-uppercase mb-3">Box</p>
+
+                                            </div>
+
+                                        </a>
+                                        <!-- Card -->
+
+                                    </div>
+                                    <!-- Grid column -->
+
+                                </div>
+                                <!-- Grid row -->
+
+                            </div>
+                            <!--Panel 3-->
+
+                        </div>
+                        <!--Tab panels-->
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="page-footer font-small pt-4 elegant-color-dark">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <img src="./img/logo.png" alt="logo">
+                    <p>Junior frontend developer</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Kontakt</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="mailto:koziolanna@student.agh.edu.pl">
+                                <i class="fas fa-paper-plane"></i> EMAIL
+                                <p class="grey-text">koziolanna@student.agh.edu.pl</p>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> ADRES
+
+                            <p class="grey-text">Kraków, Polska</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Znajdź mnie</h5>
+
+                    <a href="https://www.linkedin.com/in/anna-kozio%C5%82-222430146/" target="_blank" class="grey-text">
+                        <i class="fab fa-linkedin icon-bigger"></i>
+                    </a>
+
+                    <a href="https://github.com/anna-koziol" target="_blank" class="grey-text">
+                        <i class="fab fa-github-square icon-bigger"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2020 Anna Kozioł</div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="./mdb/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/popper.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/mdb.min.js"></script>
+    <script src="https://kit.fontawesome.com/c30483eab7.js" crossorigin="anonymous"></script>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
