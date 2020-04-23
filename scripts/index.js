@@ -14,6 +14,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }, 300);
         });
 
+        $(".tech-icons div")
+            .mouseover(function() {
+                //get p selector with description
+                let p = this.children[1];
+                $(p).css("opacity", 1);
+                $(p).addClass("icons-mouseover");
+                //get i selector 
+                let i = this.children[0];
+                $(i).css("color", "rgba(248, 0, 62, 0.4)");
+
+            })
+            .mouseout(function() {
+                let p = this.children[1];
+                $(p).css("opacity", 0);
+                $(p).removeClass("icons-mouseover");
+                let i = this.children[0];
+                $(i).css("color", "#212529");
+            });
+
+
 
     })
 })
