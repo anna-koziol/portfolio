@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 //get i selector 
                 let i = this.children[0];
                 $(i).css("color", "rgba(248, 0, 62, 0.4)");
+                $(i).css("transition", "1s");
 
             })
             .mouseout(function() {
@@ -34,6 +35,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
             });
 
 
+        //generate elements in section Portfolio
+        $.getJSON("./scripts/portfolio.json", function(json) {
+            generatePortfolioTab(Object.values(json));
+            generatePortfolioModal(json);
+        });
+
 
     })
 })
+
+const generatePortfolioTab = (data) => {
+    data.map((portfolioObjects) => {
+        let cardsContainer = $('#cardsContainer');
+
+        cardsContainer.append(` 
+        <div class="col-md-12 col-lg-4">
+            <a class='card hoverable mb-4' data-toggle='modal' data-target='#basicExampleModal' id='${portfolioObjects.id}'> 
+                <img class = 'card-img-top' src = '${portfolioObjects.previewImgSrc}' alt = '${portfolioObjects.name} page image' >
+                <div class = 'card-body'>
+                    <h5 class = 'my-3'> ${portfolioObjects.name} </h5> 
+                    <p class = 'card-text text-uppercase mb-3' > ${portfolioObjects.shortDescription} </p>
+                </div>
+            </a>
+        </div>`)
+    })
+};
+
+const generatePortfolioModal = (data) => { console.log(data) };
