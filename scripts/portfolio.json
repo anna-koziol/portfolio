@@ -18,7 +18,7 @@
         "shortDescription": "strona wizytówka + autorski CMS",
         "previewImgSrc": "./img/portfolio/bulpixCms.png",
         "longDescription": "Strona wizytówka firmy realizaującej filmy. Dodatkowo stworzyłam prosty, autorski CMS służący dodawaniu nowych realizacji do podstrony '/portfolio'",
-        "live": "https://bulpixmedia.com/",
+        "live": "https://bulpixmedia.pl/",
         "code": "https://github.com/anna-koziol/bulpix",
         "technologies": "HTML5, CSS3, JS+ jQuery, PHP, MySQL",
         "date": "01.2020"

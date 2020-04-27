@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //generate elements in section Portfolio
         $.getJSON("./scripts/portfolio.json", function(json) {
             generatePortfolioTab(Object.values(json));
-            generatePortfolioModal(json);
+            generatePortfolioModal(Object.values(json));
         });
 
 
@@ -51,7 +51,7 @@ const generatePortfolioTab = (data) => {
 
         cardsContainer.append(` 
         <div class="col-md-12 col-lg-4">
-            <a class='card hoverable mb-4' data-toggle='modal' data-target='#basicExampleModal' id='${portfolioObjects.id}'> 
+            <a class='card hoverable mb-4' data-toggle='modal' data-target='#modal-${portfolioObjects.id}' id='${portfolioObjects.id}'> 
                 <img class = 'card-img-top' src = '${portfolioObjects.previewImgSrc}' alt = '${portfolioObjects.name} page image' >
                 <div class = 'card-body'>
                     <h5 class = 'my-3'> ${portfolioObjects.name} </h5> 
@@ -62,4 +62,55 @@ const generatePortfolioTab = (data) => {
     })
 };
 
-const generatePortfolioModal = (data) => { console.log(data) };
+const generatePortfolioModal = (data) => {
+    data.map((portfolioObjects) => {
+        let modalsContainer = $('#modalsContainer');
+
+        modalsContainer.append(` 
+        <div class="modal fade" id="modal-${portfolioObjects.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="font-weight-bold mb-3 modal-pink-header">${portfolioObjects.name}</h5>
+                            <p class="text-muted">${portfolioObjects.longDescription}</p>
+
+                            <hr>
+
+
+                            <ul class="list-unstyled font-small">
+                                <li>
+                                    <p class="text-uppercase mb-2"><strong>Live</strong></p>
+                                    <p class="mb-4"><a href="${portfolioObjects.live}" target="_blank" class="text-muted">${portfolioObjects.live}</a></p>
+                                    
+                                </li>
+
+                                <li>
+                                    <p class="text-uppercase mb-2"><strong>Code</strong></p>
+                                    <p class="mb-4"><a href="${portfolioObjects.code}" target="_blank" class="text-muted">${portfolioObjects.code}</a></p>                              
+                                </li>
+
+                                <li>
+                                    <p class="text-uppercase mb-2"><strong>Technologie</strong></p>
+                                    <p class="text-muted mb-4">${portfolioObjects.technologies}</p>
+                                </li>
+
+                                <li>
+                                    <p class="text-uppercase mb-2"><strong>Data stworzenia</strong></p>
+                                    <p class="text-muted">${portfolioObjects.date}</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`)
+    })
+};
