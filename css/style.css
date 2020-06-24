@@ -71,7 +71,13 @@
             background: #f8003efb !important;
         }
         .text-behind {
-            font-size: 5em;
+            font-size: 7em !important;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .my-btn-pink {
+            margin: auto;
         }
     }
     
@@ -265,4 +271,13 @@
     .modal button span {
         color: #fff;
         font-size: 30px;
+    }
+    
+    #skills ul {
+        list-style-type: none;
+        text-align: left;
+    }
+    
+    #skills ul i {
+        color: #f80040;
     }
