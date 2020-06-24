@@ -66,21 +66,6 @@
         background: transparent !important;
     }
     
-    @media (max-width: 991px) {
-        .navbar:not(.top-nav-collapse) {
-            background: #f8003efb !important;
-        }
-        .text-behind {
-            font-size: 7em !important;
-        }
-    }
-    
-    @media (max-width: 767px) {
-        .my-btn-pink {
-            margin: auto;
-        }
-    }
-    
     .rgba-gradient {
         background: linear-gradient(45deg, #f80040, #150941 100%);
     }
@@ -280,4 +265,27 @@
     
     #skills ul i {
         color: #f80040;
+    }
+    
+    #skills img {
+        max-width: 40%;
+    }
+    /* RWD */
+    
+    @media (max-width: 991px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #f8003efb !important;
+        }
+        .text-behind {
+            font-size: 7em !important;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .my-btn-pink {
+            margin: auto;
+        }
+        #skills img {
+            max-width: 80%;
+        }
     }

@@ -40,6 +40,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
             generatePortfolioModal(Object.values(json));
         });
 
+        //show only web/mobile projects
+        $("#portfolio-all").click(function() {
+            $(".card").hide();
+            $(".cardsContainer-web").show();
+            $(".cardsContainer-mobile").show();
+        });
+
+        $("#portfolio-web").click(function() {
+            $(".card").hide();
+            $(".cardsContainer-web").show();
+        });
+
+        $("#portfolio-mobile").click(function() {
+            $(".card").hide();
+            $(".cardsContainer-mobile").show();
+        });
+
 
     })
 })
@@ -47,10 +64,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 const generatePortfolioTab = (data) => {
     data.map((portfolioObjects) => {
         let cardsContainer = $('#cardsContainer');
-
         cardsContainer.append(` 
         <div class="col-md-12 col-lg-4">
-            <a class='card hoverable mb-4' data-toggle='modal' data-target='#modal-${portfolioObjects.id}' id='${portfolioObjects.id}'> 
+            <a class='card hoverable mb-4 cardsContainer-${portfolioObjects.type}' data-toggle='modal' data-target='#modal-${portfolioObjects.id}' id='${portfolioObjects.id}'> 
                 <img class = 'card-img-top' src = '${portfolioObjects.previewImgSrc}' alt = '${portfolioObjects.name} page image' >
                 <div class = 'card-body'>
                     <h5 class = 'my-3'> ${portfolioObjects.name} </h5> 
