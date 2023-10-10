@@ -1,305 +1,921 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anna Kozioł</title>
-    <meta name="description" content="Anna Kozioł - junior frontend developer" />
-    <meta name="keywords" content="Anna Kozioł, junior frontend developer, Kraków, programista, strony internetowe, HTML, CSS, javascript, React, portfolio, webmaster" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anna Malina</title>
+    <meta
+      name="description"
+      content="Anna Malina - junior frontend developer" />
+    <meta
+      name="keywords"
+      content="Anna Malina, junior frontend developer, Kraków, quality assurance, qa, tester, software tester, portfolio" />
     <link rel="icon" href="./img/logo.png" />
     <!-- Facebook -->
-    <meta property="og:title" content="Anna Kozioł" />
-    <meta property="og:image" content="https://anna-koziol.github.io/portfolio/img/logo.png" />
-    <meta property="og:description" content="Anna Kozioł - junior frontend developer" />
+    <meta property="og:title" content="Anna Malina" />
+    <meta
+      property="og:image"
+      content="https://anna-koziol.github.io/portfolio/img/logo.png" />
+    <meta property="og:description" content="Anna Malina - quality assurance" />
     <meta property="og:type" content="Portfolio website" />
     <!-- Bootstrap/MDB -->
     <link href="./mdb/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./mdb/css/mdb.min.css" rel="stylesheet" />
     <!-- Style -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet" />
+    <!-- <script src="https://kit.fontawesome.com/23c5fc12e3.js" crossorigin="anonymous"></script> -->
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto smooth-scroll">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Główna
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" data-offset="90">O mnie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects" data-offset="90"
+                  >Projekty</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills" data-offset="30"
+                  >Umiejętności</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" data-offset="90">Kontakt</a>
+              </li>
+            </ul>
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-                    <ul class="navbar-nav mr-auto smooth-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Główna
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about" data-offset="90">O mnie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-offset="90">Projekty</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills" data-offset="30">Umiejętności</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-offset="90">Kontakt</a>
-                        </li>
-                    </ul>
-
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/anna-kozio%C5%82-222430146/" target="_blank">
-                                <i class="fab fa-linkedin light-green-text-2"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/anna-koziol" target="_blank">
-                                <i class="fab fa-github-square light-green-text-2"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </nav>
-
-        <div id="intro-section" class="view">
-            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-                <div class="container px-md-3 px-sm-0">
-                    <div class="row wow fadeIn">
-                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-
-                            <h1 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Anna Kozioł</h1>
-                            <h4 class="subtext-header mt-2 mb-4">Junior Frontend Developer</h4>
-                            <a id="btn-see-portfolio" href="#projects" class="btn btn-rounded btn-outline-white">
-                                ZOBACZ MOJE PORTFOLIO
-                            </a>
-
-                        </div>
-                        <div class="img-background">
-                            <img src="./img/1.png" alt="image abstract">
-                            <img src="./img/2.png" alt="image abstract">
-                            <img src="./img/3.png" alt="image abstract">
-                            <img src="./img/5.png" alt="image abstract">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.linkedin.com/in/anna-kozio%C5%82-222430146/"
+                  target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://github.com/anna-koziol"
+                  target="_blank">
+                  <i class="fab fa-github-square light-green-text-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-
+      <div id="intro-section" class="view">
+        <div
+          class="mask rgba-gradient d-flex justify-content-center align-items-center">
+          <div class="container px-md-3 px-sm-0">
+            <div class="row wow fadeIn">
+              <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                <h1
+                  class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">
+                  Anna Malina
+                </h1>
+                <h4 class="subtext-header mt-2 mb-4">Quality Assurance</h4>
+                <a
+                  id="btn-see-portfolio"
+                  href="#projects"
+                  class="btn btn-rounded btn-outline-white">
+                  ZOBACZ MOJE PORTFOLIO
+                </a>
+              </div>
+              <div class="img-background">
+                <img src="./img/1.png" alt="image abstract" />
+                <img src="./img/2.png" alt="image abstract" />
+                <img src="./img/3.png" alt="image abstract" />
+                <img src="./img/5.png" alt="image abstract" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="container" id="about">
-            <div class="section-dash center-element"></div>
-            <h3 class="font-weight-bold black-text mb-4 pb-2">O mnie</h3>
-            <div class="row position-relative">
-
-                <h5 class="text-behind">O mnie</h5>
-                <div class="col-12 col-md-6 text-center text-md-left">
-                    <p>
-                        Jestem niestacjonarną studentką Akademii Górniczo-Hutniczej w Krakowie. Uczę się ciekawego kierunku Informatyka i ekonometria. Od kilku lat jestem zafascynowana frontendem, z którym wiążę swoją przyszłość zawodową. Na co dzień staram się wciąż rozwijać
-                        umiejętności informatyczne poprzez drobne projekty. W 2018 roku zaczęłam działania jako freelancer. Od sierpnia 2018 roku działam również w startupie - Aribo - jako asystentka zarządu oraz tester manualny oprogramowania.
-                    </p>
-
-                    <div class="my-btn-pink align-middle">
-                        <a href="https://anna-koziol.github.io/portfolio/ANNA%20KOZIO%C5%81%20CV.pdf" download class="align-middle">
-                            Pobierz moje CV <i class="fas fa-file-download "></i>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="col-12 col-md-6 ">
-                    <img src="./img/me.png " alt="my photo - selfportrait ">
-                </div>
-            </div>
-        </section>
-
-        <section class="container " id="skills">
-            <div class="section-dash center-element "></div>
-            <h3 class="font-weight-bold black-text mb-4 pb-2 ">Umiejętności</h3>
-
+      <section class="container" id="about">
+        <div class="section-dash center-element"></div>
+        <h3 class="font-weight-bold black-text mb-4 pb-2">O mnie</h3>
+        <div class="row position-relative">
+          <h5 class="text-behind">O mnie</h5>
+          <div class="col-12 col-md-6 text-center text-md-left">
             <p>
-                Posiadam następujące umiejętności
+              Jestem testerem oprogramowania, z doświadczeniem w testowaniu
+              manualnym aplikacji webowych i mobilnych, poszukujący pracy w
+              organizacji zorientowanej na jakość. Poszukuję możliwości
+              poszerzenia wiedzy, w tym w zakresie testów automatycznych.
             </p>
 
-            <ul>
-                <li><i class="fas fa-circle"></i> Manual testing, Quality assistant </li>
-                <li><i class="fas fa-circle"></i> Tworzenie stron internetowych</li>
-                <li><i class="fas fa-circle"></i> Azure DevOps, Trello</li>
-                <li><i class="fas fa-circle"></i> Kwalifikacje zawodowe: E12, E13, E14 - tytuł technika informatyka</li>
-                <li><i class="fas fa-circle"></i> Sumienność, pracowitość, dokładność</li>
-            </ul>
-            <img src="./img/undraw_mobile_testing_reah.svg" alt="testing">
-        </section>
+            <div class="my-btn-pink align-middle">
+              <a
+                href="https://anna-koziol.github.io/portfolio/CV_ANNA_MALINA.pdf"
+                download
+                class="align-middle">
+                Pobierz moje CV <i class="fas fa-file-download"></i>
+              </a>
+            </div>
+          </div>
 
-        <section class="container " id="technologies">
-            <div class="section-dash center-element"></div>
-            <h3 class="font-weight-bold black-text mb-4 pb-2 ">Technologie</h3>
+          <div class="col-12 col-md-6">
+            <img src="./img/me.png " alt="my photo - selfportrait " />
+          </div>
+        </div>
+      </section>
 
-            <p>
-                Mam doświadczenie z pracą z następującymi techonologiami
+      <section class="container" id="skills">
+        <div class="section-dash center-element"></div>
+        <h3 class="font-weight-bold black-text mb-4 pb-2">Umiejętności</h3>
+
+        <p>Posiadam następujące umiejętności</p>
+
+        <ul>
+          <li><i class="fas fa-circle"></i> Znajomość zagadnień ISTQB</li>
+          <li>
+            <i class="fas fa-circle"></i> Manualne testowanie aplikacji webowych
+            i mobilnych
+          </li>
+          <li><i class="fas fa-circle"></i> Raportowanie defektów</li>
+          <li>
+            <i class="fas fa-circle"></i> Tworzenie przypadków testowych, planów
+            testów, raportów z testów
+          </li>
+          <li>
+            <i class="fas fa-circle"></i> Tworzenie prostych stron internetowych
+            one-page
+          </li>
+          <li><i class="fas fa-circle"></i> Analityczne myślenie</li>
+          <li>
+            <i class="fas fa-circle"></i> Sumienność, pracowitość, dokładność
+          </li>
+          <li>
+            <i class="fas fa-circle"></i> Kwalifikacje zawodowe: E12, E13, E14 -
+            tytuł technika informatyka
+          </li>
+        </ul>
+        <img src="./img/undraw_mobile_testing_reah.svg" alt="testing" />
+      </section>
+
+      <section class="container" id="technologies">
+        <div class="section-dash center-element"></div>
+        <h3 class="font-weight-bold black-text mb-4 pb-2">
+          Narzędzia & Technologie
+        </h3>
+
+        <p>
+          Mam doświadczenie z pracą z następującymi narzędziami i techonologiami
+        </p>
+        <div class="row tech-icons">
+          <div class="col-4 col-md-3 text-center">
+            <i class="fab fa-jira"></i>
+            <p class="tech-info">Jira / Azure DevOps / Pivotal</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fas fa-list"></i>
+            <p class="tech-info">Qase</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fas fa-search"></i>
+            <p class="tech-info">Insomnia / Postman</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fas fa-laptop-code"></i>
+            <p class="tech-info">Visual Studio Code</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="far fa-file"></i>
+            <p class="tech-info">Swagger</p>
+          </div>
+
+          <div class="col-4 col-md-3 text-center">
+            <i class="fab fa-chrome"></i>
+            <p class="tech-info">Browsers devtools</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fas fa-file-excel"></i>
+            <p class="tech-info">Excel / Word</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fas fa-server"></i>
+            <p class="tech-info">MySQL</p>
+          </div>
+
+          <div class="col-4 col-md-3 text-center">
+            <i class="fab fa-html5"></i>
+            <p class="tech-info">HTML5</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fab fa-css3-alt"></i>
+            <p class="tech-info">CSS3</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fab fa-bootstrap"></i>
+            <p class="tech-info">Bootstrap 4</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fab fa-mdb"></i>
+            <p class="tech-info">Material Design for Bootstrap</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fab fa-js"></i>
+            <p class="tech-info">Podstawy JS + jQuery</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fas fa-tree"></i>
+            <p class="tech-info">Podstawy Cypress</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fab fa-npm"></i>
+            <p class="tech-info">NPM</p>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <i class="fab fa-github-square"></i>
+            <p class="tech-info">GIT [GitHub, GitKraken]</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="projectsQa">
+        <div class="section-dash center-element"></div>
+        <h3 class="font-weight-bold black-text mb-4 pb-2">Projekty</h3>
+
+        <p>
+          Zapraszam do zapoznania się z przykładowymi zrealizowanmi przeze mnie
+          procesami związanymi z testowaniem oprogramowania
+        </p>
+
+        <ul
+          class="nav nav-tabs flex-center flex-wrap mx-0"
+          id="testProjects"
+          role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold active text-uppercase"
+              id="c-tab"
+              data-toggle="tab"
+              href="#c"
+              role="tab"
+              aria-controls="c"
+              aria-selected="true"
+              >Cypress</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold text-uppercase"
+              id="tp-tab"
+              data-toggle="tab"
+              href="#tp"
+              role="tab"
+              aria-controls="tp"
+              aria-selected="false"
+              >Test plan</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold text-uppercase"
+              id="pt-tab"
+              data-toggle="tab"
+              href="#pt"
+              role="tab"
+              aria-controls="pt"
+              aria-selected="false"
+              >Przypadki testowe</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold text-uppercase"
+              id="st-tab"
+              data-toggle="tab"
+              href="#st"
+              role="tab"
+              aria-controls="st"
+              aria-selected="false"
+              >Scenariusze testowe</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold text-uppercase"
+              id="r-tab"
+              data-toggle="tab"
+              href="#r"
+              role="tab"
+              aria-controls="r"
+              aria-selected="false"
+              >Raporty z testów</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold text-uppercase"
+              id="db-tab"
+              data-toggle="tab"
+              href="#db"
+              role="tab"
+              aria-controls="db"
+              aria-selected="false"
+              >Opisy błędów</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold text-uppercase"
+              id="prt-tab"
+              data-toggle="tab"
+              href="#prt"
+              role="tab"
+              aria-controls="prt"
+              aria-selected="false"
+              >Proces testowania</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link font-weight-bold text-uppercase"
+              id="sw-tab"
+              data-toggle="tab"
+              href="#sw"
+              role="tab"
+              aria-controls="sw"
+              aria-selected="false"
+              >Specyfika wymagań</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="projectsQaContent">
+          <div
+            class="tab-pane fade"
+            id="sw"
+            role="tabpanel"
+            aria-labelledby="sw-tab">
+            <div class="projectExample">
+              <h4>Specyfikacja wymagań</h4>
+              <i>- skrócona wersja -</i>
+
+              <div class="mt-3">
+                <b>Opis wymagań funkcjonalnych:</b>
+                <ol>
+                  <li>
+                    System powinien być podzielony na dwa segmenty:
+                    <ul>
+                      <li>
+                        Backend – skrypty umożliwiające działanie aplikacji
+                        które umieszczone są na serwerze, a do których nie mają
+                        dostępu bezpośredniego użytkownicy systemu
+                      </li>
+                      <li>
+                        Frontend – wizualny segment działający po stronie
+                        użytkownika i zarządzający systemem
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Muszą być wyróżnione role dla użytkowników systemów:
+                    <ul>
+                      <li>
+                        Super administrator – możliwość dodawania firmy,
+                        zarządzania użytkownikami i zasobami AR
+                      </li>
+                      <li>
+                        Administrator - możliwość dodawania grup otwartych i
+                        zamkniętych, przypisywanie moderatorów i
+                        administratorów, tworzenie kampanii, dashbordów z
+                        wiadomościami
+                      </li>
+                      <li>
+                        Moderator - możliwość zarządzania grupą, dodawanie i
+                        usuwanie uczestników, tworzenie questów
+                      </li>
+                      <li>
+                        Zwykły użytkownik – możliwość edycji swojego profilu
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <b>Historyjki użytkownika</b>
+                <p>Zwykły użytkownik:</p>
+                <p>
+                  UC1: Jako zwykły użytkownik chcę edytować informacje o swoim
+                  profilu (zdjęcie profilowe, imię, nazwisko, data urodzenia,
+                  mail), dzięki czemu informacje o moim koncie będą wyświetlane
+                  jako aktualne.
+                </p>
+                <p>
+                  UC2: Jako zwykły użytkownik chcę zmienić swoje hasło, dzięki
+                  czemu możliwe będzie logowanie poprzez nowe hasło.
+                </p>
+
+                <p>Moderator:</p>
+                <p>
+                  UC3: Jako moderator chcę mieć wszystkie funkcjonalności
+                  zwykłego użytkownika, dzięki czemu będę mógł edytować dane
+                  swojego konta.
+                </p>
+                <p>
+                  UC4: Jako moderator chcę widzieć globalny ranking graczy
+                  grupy, dzięki czemu będzie możliwe wyłonienie najlepszego z
+                  nich.
+                </p>
+
+                <b>
+                  👉
+                  <a
+                    href="https://docs.google.com/document/d/1jEX4vDrdOXYOvNqEHCnGDiF6344emU3P/edit?usp=sharing&ouid=116233141942259632623&rtpof=true&sd=true"
+                    target="_blank">
+                    Link do pełnej wersji
+                  </a>
+                  👈
+                </b>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tp"
+            role="tabpanel"
+            aria-labelledby="tp-tab">
+            <div class="projectExample">
+              <h4>Test plan</h4>
+              <i>- skrócona wersja przykładowego planu -</i>
+
+              <div class="mt-3">
+                <b>Cel</b>
+                <p>
+                  Ten dokument ma na celu opisanie ogólnego procesu testowania
+                  aplikacji webowej ABC, strategii tegoż procesu wraz z
+                  określeniem jego zakresu. Zostanie opracowany również
+                  harmonogram.
+                </p>
+
+                <b>Oczekiwania</b>
+                <p>
+                  Proces testowania powinien udowodnić, że dostarczone
+                  oprogramowanie spełnia wszelkie wymagania funkcjonalne i
+                  niefunkcjonalne (określone w Specyfikacji wymagań). Zauważone
+                  defekty powinny zostać poprawione przez zespół deweloperki i
+                  ponownie przetestowane z akceptacją przed wypuszczeniem
+                  kolejnej wersji aplikacji.
+                </p>
+
+                <b>Zakres testów</b>
+                <ol>
+                  <li>
+                    W procesie testowania aplikacji webowej ABC zostaną
+                    zaimplementowane testy jednostkowe wszystkich kluczowych
+                    modułów. Zostaną one zaimplementowane przez zespół
+                    deweloperski. Poszczególne metody powinny być przetestowane
+                    w sposób odseparowany do reszty systemu.
+                  </li>
+                  <li>
+                    Testy integracyjne nie są planowane, gdyż w obecnym stanie
+                    aplikacja działa poprawnie i nie jest konieczne sprawdzanie
+                    integracji pomiędzy modułami.
+                  </li>
+                  <li>
+                    Przeprowadzone zostaną testy funkcjonalne, aby zweryfikować
+                    dostarczone oprogramowanie i jego kluczowe funkcje ze
+                    spisanymi historyjkami użytkownika
+                  </li>
+                  <li>
+                    Nie zostaną wykonane testy wydajnościowe w celu walidacji
+                    czy system jest odporny na większy ruch użytkowników, gdyż
+                    dla najbliższego czasu nie oczekuje się wzrostu liczebności
+                    odbiorców projektu. Dla obecnej liczby użytkowników system
+                    działa poprawnie.
+                  </li>
+                  <li>
+                    Testy bezpieczeństwa nie będą wykonywane ze względu na brak
+                    odpowiednich zasobów personalnych i budżetowych.
+                  </li>
+                  <li>
+                    Wykonane zostaną testy regresyjne po zaimplementowanie
+                    każdej nowej funkcjonalności, aby zbadać stabilność
+                    aplikacji.
+                  </li>
+                  <li>
+                    7. Przed planowaną aktualizacją wersji produkcyjnej, zostaną
+                    wykonane testy akceptacyjne w celu upewnienia się, że
+                    aktualizacja niesie ze sobą przyrost jakości projektu.
+                  </li>
+                  <li>
+                    8. Główne funkcjonalności aplikacje zostaną zbadane ze
+                    pomocą testów automatycznych.
+                  </li>
+                </ol>
+
+                <b>Kryteria zaliczenia testów</b>
+                <ol>
+                  <li>
+                    Testy jednostkowe
+                    <ul>
+                      <li>
+                        Stopień pokrycia testów jednostkowych dla projektu
+                        powinien wynosić minimum 70%
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Testy funkcjonalne
+                    <ul>
+                      <li>
+                        Wszystkie zbadane funkcjonalności powinny zostać
+                        zaakceptowane przez zespół testerów
+                      </li>
+                      <li>
+                        We wszystkich zbadanych testach rezultat testów
+                        odpowiada oczekiwanym wynikom
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Testy regresyjne
+                    <ul>
+                      <li>
+                        Wszystkie funkcjonalności opisane w historyjkach
+                        użytkownika zostały przetestowane
+                      </li>
+                      <li>
+                        Nie zauważono żadnych nowych błędów podczas
+                        przeprowadzenia testów regresyjnych
+                      </li>
+                      <li>
+                        Opisane funkcjonalności w historyjkach użytkownika
+                        odznaczają się taką samą jakością lub większą jak w
+                        obecnej wersji produkcyjnej
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Testy akceptacyjne
+                    <ul>
+                      <li>
+                        Nie powinno być otwartych żadnych krytycznych błędów
+                        (tj. o priorytecie 3 bądź 4)
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Testy automatyczne
+                    <ul>
+                      <li>
+                        Testy automatyczne powinny weryfikować wszystkie
+                        funkcjonalności aplikacji
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <b>Zasady testowania</b>
+                <ul>
+                  <li>
+                    Proces testowania aplikacji webowej ABC będzie skupiał się
+                    na weryfikacji poprawności działania opisanych historyjek
+                    użytkownika
+                  </li>
+                  <li>
+                    Proces testowania powinien spełniać wszystkie zapisy
+                    określone w tym dokumencie, jednak powinien również być na
+                    tyle elastyczny, aby można było w nim dokonywać zmian, o ile
+                    zaistnieje taka potrzeba
+                  </li>
+                  <li>
+                    Środowisko testowe w jak największym stopniu powinno
+                    odzwierciedlać środowisko produkcyjne i panujące w nim
+                    zasady
+                  </li>
+                  <li>
+                    Proces testowania powinien być działaniem mierzalnym i
+                    powtarzalnym
+                  </li>
+                  <li>
+                    Proces testowania będzie uwzględniał określone kryteria
+                    wejścia i wyjścia
+                  </li>
+                </ul>
+
+                <b>
+                  👉
+                  <a
+                    href="https://docs.google.com/document/d/1vhtOwYUyXuKG9_wFNojVGnRiLDcc2Aun/edit?usp=sharing&ouid=116233141942259632623&rtpof=true&sd=true"
+                    target="_blank">
+                    Link do pełnej wersji
+                  </a>
+                  👈
+                </b>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pt"
+            role="tabpanel"
+            aria-labelledby="pt-tab">
+            <div class="projectExample">
+              <h4>Przypadki testowe</h4>
+              <i>- skrócona wersja -</i>
+              <p>
+                Przypadki testowe podczas mojej pracy zawodowej realizowałam
+                albo w aplikacji Qase albo jako lista kroków w formie tabeli w
+                arkuszu kalkulacyjnym.
+              </p>
+              <img src="./img/porfolio-testy/tc1a.png" />
+              <img src="./img/porfolio-testy/tc1b.png" />
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="st"
+            role="tabpanel"
+            aria-labelledby="st-tab">
+            <div class="projectExample">
+              <h4>Scenariusze testowe</h4>
+              <i>- skrócona wersja -</i>
+              <p>
+                Scenariusze testowe wykonywałam na 2 sposoby: albo w aplikacji
+                Qase wybierając z dodanych przypadków testowych ich podzbiór lub
+                w arkuszu kalkulacyjnym - poprzez tabelę z przypadkami testowymi
+                posegregowanymi pod daną funkcjonalność (jak autoryzacja,
+                ścieżka zakupu w aplikacji, użytkowanie chatu).
+              </p>
+              <img src="./img/porfolio-testy/tp.png" />
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="r"
+            role="tabpanel"
+            aria-labelledby="r-tab">
+            <div class="projectExample">
+              <h4>Raporty z testów</h4>
+              <p>
+                Raporty z testów, które wykonywałam w momentach freeze oraz
+                kilka dni przed planowanym release, były zależne od projektu, w
+                którym uczestniczyłam. Ich szablon wyglądał następująco: lista
+                zadań zaplanowanych na ten sprint z wynikiem testów oraz zbiorem
+                defektów. Oprócz tego raport zawierał listę defeketów z
+                największym priorytetem, które dotyczą ogółu aplikacji. W sekcji
+                informacyjnej raport zawierał inforrmacje o wersji aplikacji,
+                wersji systemu i urządzeniach / przeglądarkach, listę testerów
+                wraz z datą. Raport był realizowany manualnie w arkuszu
+                kalkulacyjnym w formie tabel umieszczonym w chmurze. Przesyłałam
+                również raport automatycznie wygenerowany z apliakcji Qase po
+                wykonaanym scenariuszu testowym.
+              </p>
+              <img src="./img/porfolio-testy/r1a.png" alt="" />
+              <img src="./img/porfolio-testy/r1b.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="db"
+            role="tabpanel"
+            aria-labelledby="db-tab">
+            <div class="projectExample">
+              <h4>Opisy błędów</h4>
+              <i>- szablon -</i>
+              <p>
+                Podczas zgłaszania zauważonych defektów stosowałam do tej pory
+                szablon:
+              </p>
+              <ul>
+                <li>Warunki wstępne - dane logowania</li>
+                <li>Kroki reprodukcji w formie listy</li>
+                <li>Kopia błędu z konsoli devtools (jeśli wystąpił)</li>
+                <li>
+                  Nazwa requestu, status odpowiedzi, payload i response (jeśli
+                  wystąpił)
+                </li>
+                <li>Screen lub video z krokami reprodukcji</li>
+                <li>
+                  Dane techniczne: typ środowiska, wersja aplikacji, wersja
+                  przeglądarki bądź wersja systemu operacyjnego urządzenia
+                  mobilnego
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="prt"
+            role="tabpanel"
+            aria-labelledby="prt-tab">
+            <div class="projectExample">
+              <h4>Proces testowania</h4>
+              <i>- skrócona wersja -</i>
+
+              <p>
+                Forma dokumentacji (notatki) stworzona przeze mnie dla całego
+                zespołu projektowego - w szczególności dla nowych członków
+                zespołu testerskiego. Omawiająca środowiska w których działa
+                aplikacja pod kątem pracy testerów, plan wdrożenia
+                usystematyzowanego procesu developmentu na poszczególne
+                środowiska z uwzględnieniem procesu testowania, proces
+                testowania nowych funkcjonalności oraz proces zgłaszania
+                defektów.
+              </p>
+
+              <img src="./img/porfolio-testy/p.png" />
+
+              <div>
+                <b>
+                  👉
+                  <a
+                    href="https://docs.google.com/document/d/1hw745zPscFB812cWrplEW6LQmMj-bMm5VFprykWkTIY/edit?usp=sharing"
+                    target="_blank">
+                    Link do pełnej wersji
+                  </a>
+                  👈
+                </b>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show active"
+            id="c"
+            role="tabpanel"
+            aria-labelledby="c-tab">
+            <div class="projectExample">
+              <h4>Cypress</h4>
+              <i>- własny projekt -</i>
+
+              <p>
+                Wykonałam testy E2E platformy olx.pl zawierające kilka skryptów
+                dotycząych: wyświetlanie podstawowych sekcji i elementów na
+                stronie głównej oraz wyszukiwanie rzeczy. Użyłam w tym celu
+                frameworku Cypress 12 oraz TypeScript.
+              </p>
+              <b>
+                👉
+                <a
+                  href="https://github.com/anna-koziol?tab=repositories"
+                  target="_blank">
+                  Link do pełnej wersji
+                </a>
+                👈
+              </b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid background-half" id="projects">
+        <div class="section-dash center-element"></div>
+        <h3 class="font-weight-bold black-text mb-4 pb-2">
+          Strony internetowe
+        </h3>
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center">
+              Zapraszam do zobaczenia moich dotychczasowych prostych stron
+              internetowych realizowanych w ramach freelancer.
             </p>
-            <div class="row tech-icons ">
-                <div class="col-4 col-md-3 text-center ">
-                    <i class="fab fa-html5 "></i>
-                    <p class="tech-info ">HTML5</p>
+
+            <div class="container" id="modalsContainer">
+              <div class="row">
+                <div class="col-12">
+                  <ul
+                    class="nav md-pills flex-center flex-wrap mx-0"
+                    role="tablist ">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active font-weight-bold text-uppercase"
+                        data-toggle="tab"
+                        href="#all"
+                        role="tab"
+                        id="portfolio-all"
+                        >WSZYSTKO</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link font-weight-bold text-uppercase"
+                        data-toggle="tab"
+                        href="#web"
+                        role="tab"
+                        id="portfolio-web"
+                        >WEB</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link font-weight-bold text-uppercase"
+                        data-toggle="tab"
+                        href="#mobile"
+                        role="tab"
+                        id="portfolio-mobile"
+                        >MOBILE</a
+                      >
+                    </li>
+                  </ul>
                 </div>
-                <div class="col-4 col-md-3 text-center ">
-                    <i class="fab fa-css3-alt "></i>
-                    <p class="tech-info ">CSS3</p>
+              </div>
+
+              <div class="tab-content mb-5">
+                <div
+                  class="tab-pane fade show in active"
+                  id="all"
+                  role="tabpanel ">
+                  <div class="row" id="cardsContainer"></div>
                 </div>
-                <div class="col-4 col-md-3 text-center ">
-                    <i class="fab fa-sass"></i>
-                    <p class="tech-info ">SASS</p>
-                </div>
-                <div class="col-4 col-md-3 text-center ">
-                    <i class="fab fa-bootstrap "></i>
-                    <p class="tech-info ">Bootstrap 4</p>
-                </div>
-                <div class="col-4 col-md-3 text-center ">
-                    <i class="fab fa-mdb "></i>
-                    <p class="tech-info ">Material Design for Bootstrap</p>
-                </div>
-                <div class="col-4 col-md-3 text-center ">
-                    <i class="fab fa-js "></i>
-                    <p class="tech-info ">JavaScript + jQuery</p>
-                </div>
-                <div class="col-4 col-md-3 text-center ">
-                    <i class="fab fa-react "></i>
-                    <p class="tech-info ">React + React Native</p>
-                </div>
-                <div class="col-4 col-md-3 text-center ">
-                    <i class="fab fa-npm "></i>
-                    <p class="tech-info ">NPM</p>
-                </div>
-                <div class="col-4 col-md-3 text-center ">
-                    <i class="fab fa-github-square "></i>
-                    <p class="tech-info ">GIT [GitHub, GitKraken]</p>
-                </div>
+              </div>
             </div>
-
-            </div>
-        </section>
-
-        <section class="container-fluid background-half " id="projects">
-            <div class="section-dash center-element "></div>
-            <h3 class="font-weight-bold black-text mb-4 pb-2 ">Projekty</h3>
-            <div class="row ">
-                <div class="col-12 ">
-                    <p class="text-center ">
-                        Zapraszam do zobaczenia moich dotychczasowych stron i aplikacji.
-                    </p>
-
-                    <div class="container " id="modalsContainer">
-
-                        <!--First row-->
-                        <div class="row ">
-
-                            <!--First column-->
-                            <div class="col-12 ">
-
-                                <!-- Nav tabs -->
-                                <ul class="nav md-pills flex-center flex-wrap mx-0 " role="tablist ">
-                                    <li class="nav-item ">
-                                        <a class="nav-link active font-weight-bold text-uppercase " data-toggle="tab" href="#all" role="tab" id="portfolio-all">WSZYSTKO</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#web" role="tab" id="portfolio-web">WEB</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#mobile" role="tab" id="portfolio-mobile">MOBILE</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <!--First column-->
-
-                        </div>
-                        <!--First row-->
-
-                        <!--Tab panels-->
-                        <div class="tab-content mb-5 ">
-
-                            <div class="tab-pane fade show in active " id="all" role="tabpanel ">
-                                <div class="row " id="cardsContainer">
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--Tab panels-->
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="page-footer font-small pt-4 elegant-color-dark ">
-        <div class="container-fluid text-center text-md-left" id="contact">
-            <div class="row">
-                <div class="col-md-6 mt-md-0 mt-3 ">
-                    <img src="./img/logo.png " alt="logo ">
-                    <p>Junior frontend developer</p>
-                </div>
-                <hr class="clearfix w-100 d-md-none pb-3 ">
-                <div class="col-md-3 mb-md-0 mb-3 ">
-                    <h5 class="text-uppercase ">Kontakt</h5>
-                    <ul class="list-unstyled ">
-                        <li>
-                            <a href="mailto:koziolanna@student.agh.edu.pl ">
-                                <i class="fas fa-paper-plane "></i> EMAIL
-                                <p class="grey-text ">koziolanna@student.agh.edu.pl</p>
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt "></i> ADRES
+    <footer class="page-footer font-small pt-4 elegant-color-dark">
+      <div class="container-fluid text-center text-md-left" id="contact">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <img src="./img/logo.png " alt="logo " />
+            <p>Quality Assurance</p>
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3" />
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Kontakt</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:anna.malina.qa@gmail.com">
+                  <i class="fas fa-paper-plane"></i> EMAIL
+                  <p class="grey-text">anna.malina.qa@gmail.com</p>
+                </a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> ADRES
 
-                            <p class="grey-text ">Kraków, Polska</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-md-0 mb-3 ">
-                    <h5 class="text-uppercase ">Znajdź mnie</h5>
+                <p class="grey-text">Kraków, Polska</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Znajdź mnie</h5>
 
-                    <a href="https://www.linkedin.com/in/anna-kozio%C5%82-222430146/ " target="_blank " class="grey-text ">
-                        <i class="fab fa-linkedin icon-bigger "></i>
-                    </a>
+            <a
+              href="https://www.linkedin.com/in/anna-kozio%C5%82-222430146/ "
+              target="_blank "
+              class="grey-text">
+              <i class="fab fa-linkedin icon-bigger"></i>
+            </a>
 
-                    <a href="https://github.com/anna-koziol " target="_blank " class="grey-text ">
-                        <i class="fab fa-github-square icon-bigger "></i>
-                    </a>
-
-                </div>
-            </div>
+            <a
+              href="https://github.com/anna-koziol "
+              target="_blank "
+              class="grey-text">
+              <i class="fab fa-github-square icon-bigger"></i>
+            </a>
+          </div>
         </div>
-        <div class="footer-copyright text-center py-3 ">© 2020 Anna Kozioł</div>
+      </div>
+      <div class="footer-copyright text-center py-3">©2023 Anna Malina</div>
     </footer>
-
-
 
     <!-- Scripts -->
     <script src="./mdb/js/jquery.min.js "></script>
-    <script type="text/javascript " src="./mdb/js/popper.min.js "></script>
-    <script type="text/javascript " src="./mdb/js/bootstrap.min.js "></script>
-    <script type="text/javascript " src="./mdb/js/mdb.min.js "></script>
-    <script src="https://kit.fontawesome.com/c30483eab7.js " crossorigin="anonymous "></script>
-
+    <script type="text/javascript" src="./mdb/js/popper.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/mdb.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c30483eab7.js "
+      crossorigin="anonymous "></script>
     <script src="./scripts/index.js "></script>
-</body>
-
+  </body>
 </html>
